@@ -148,6 +148,9 @@ module.exports = function (params) {
 
           var globResults = glob.sync(includePath, {mark: true});
           fileMatches = fileMatches.concat(globResults);
+            
+          // stop matching files after first match found
+          if (filesMatches.length > 0) break;
         }
       }else{
         // Otherwise search relatively
