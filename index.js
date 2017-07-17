@@ -150,7 +150,7 @@ module.exports = function (params) {
           fileMatches = fileMatches.concat(globResults);
             
           // stop matching files after first match found
-          if (filesMatches.length > 0) break;
+          if (fileMatches.length > 0) break;
         }
       }else{
         // Otherwise search relatively
